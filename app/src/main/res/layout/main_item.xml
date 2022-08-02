@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Teacher Name:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course:"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@id/img1">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_course"
+            android:layout_toRightOf="@id/img1">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:backgroundTint="@color/red"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp">
+            </Button>
+            <Button
+                android:id="@+id/btn_dlt"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:backgroundTint="@color/red"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="5dp">
+            </Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
