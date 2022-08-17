@@ -18,15 +18,17 @@
             android:layout_height="80dp"
             android:src="@mipmap/ic_launcher"
             app:civ_border_color="@color/black"
-            app:civ_border_width="2dp"></de.hdodenhof.circleimageview.CircleImageView>
+            app:civ_border_width="2dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/img1"
-            android:text="Teacher Name:"
+            android:layout_toEndOf="@id/img1"
+            android:text="Product Name:"
             android:textColor="#000"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -35,27 +37,42 @@
             android:id="@+id/tv_course"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Course:"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:layout_marginLeft="10dp"
             android:layout_below="@id/tv_name"
-            android:layout_toRightOf="@id/img1">
-        </TextView>
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Price:"
+            android:textColor="#000"
+            android:textSize="15sp" />
         <TextView
             android:id="@+id/tv_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email:"
-
+            android:text="Description:"
             android:textSize="15sp"
             android:textColor="#000"
             android:layout_marginLeft="10dp"
             android:layout_below="@id/tv_course"
             android:layout_toRightOf="@id/img1">
         </TextView>
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/total_star_rating"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="90dp"
+            android:isIndicator="true"
+
+            android:numStars="5"
+            android:stepSize="0.25"
+            app:mrb_progressBackgroundTint="@color/golden"
+            app:mrb_progressTint="@color/golden"
+            app:mrb_secondaryProgressTint="@color/golden" />
         <LinearLayout
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="55dp"
             android:layout_below="@id/tv_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -81,12 +81,12 @@ public class AdapterClass extends FirebaseRecyclerAdapter<MainModel,AdapterClass
                     @Override
                     public void onClick(View view) {
                         Map<String,Object>map=new HashMap<>();
-                        map.put("name",name.getText().toString());
-                        map.put("course",course.getText().toString());
-                        map.put("email",email.getText().toString());
+                        map.put("P_name",name.getText().toString());
+                        map.put("price",course.getText().toString());
+                        map.put("desc",email.getText().toString());
                         map.put("tUrl",tUrl.getText().toString());
 
-                        FirebaseDatabase.getInstance().getReference().child("teachers")
+                        FirebaseDatabase.getInstance().getReference().child("items")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
