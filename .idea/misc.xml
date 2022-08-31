@@ -6,8 +6,10 @@
         <entry key="app/src/main/res/drawable/ic_baseline_contacts_24.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.154" />
+        <entry key="app/src/main/res/drawable/input_bg.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/rounded.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_add.xml" value="0.19010416666666666" />
+        <entry key="app/src/main/res/layout/activity_google_sign_in.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17604166666666668" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19010416666666666" />
